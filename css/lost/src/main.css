@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  border-radius: 50%;
+  transform: translateX(10px);
+}
+
+.grid-item {
+  background: orange;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.grid-one {
+  width: 100%;
+  lost-utility: clearfix;
+}
+
+.grid-one div {
+  lost-column: 1/1;
+}
+
+@media screen and (min-width: 600px) {
+  .grid-one div {
+    lost-column: 1/2;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .grid-one div {
+    lost-column: 1/3;
+  }
+}
